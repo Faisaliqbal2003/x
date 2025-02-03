@@ -1,0 +1,12 @@
+model User {
+  id        Int     @id @default(autoincrement())
+  email     String  @unique
+  name      String?
+}
+
+model Message {
+  id        Int     @id @default(autoincrement())
+  content   String
+  userId    Int
+  timestamp DateTime @default(now())
+}

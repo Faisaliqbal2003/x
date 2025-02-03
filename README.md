@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# X Automation Tool
+
+A powerful automation tool for X (Twitter) marketing and lead generation.
+
+## Features
+
+- 🎯 Lead finder with advanced filters
+- 💬 DM automation and campaign management
+- 📊 Analytics dashboard
+- 🔍 User engagement tracking
+- ⚡ Real-time data updates
+
+## Tech Stack
+
+- Next.js 14
+- React 18
+- Tailwind CSS
+- Twitter API v2
+- Axios for API calls
 
 ## Getting Started
 
-First, run the development server:
-
+1. **Clone the repository**
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/your-username/x-automation.git
+cd x-automation
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. **Install dependencies**
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+3. **Set up environment variables**
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Create a `.env` file in the root directory with your Twitter API credentials:
+```env
+NEXT_PUBLIC_TWITTER_BEARER_TOKEN=your_token_here
+TWITTER_API_KEY=your_api_key_here
+TWITTER_API_SECRET=your_api_secret_here
+TWITTER_ACCESS_TOKEN=your_access_token_here
+TWITTER_ACCESS_SECRET=your_access_secret_here
+```
 
-## Learn More
+4. **Run the development server**
+```bash
+npm run dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+Open [http://localhost:3000](http://localhost:3000) to view the application.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Project Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+src/
+├── app/
+│   ├── api/          # API routes
+│   ├── components/   # React components
+│   ├── lib/         # Utilities and helpers
+│   └── pages/       # App pages
+├── public/          # Static files
+└── styles/         # Global styles
+```
 
-## Deploy on Vercel
+## Contributing
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
